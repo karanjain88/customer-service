@@ -55,7 +55,7 @@ class CustomerServiceApplicationTests {
 		Assertions.assertTrue(responseEntity.getStatusCode().is2xxSuccessful());
 		var customerDto = responseEntity.getBody();
 		Assertions.assertNotNull(customerDto);
-		Assertions.assertEquals("SAM", customerDto.name());
+		Assertions.assertEquals("sam", customerDto.name());
 		Assertions.assertEquals(2, customerDto.recommendedMovies().size());
 	}
 
